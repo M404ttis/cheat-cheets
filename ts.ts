@@ -31,3 +31,27 @@ enum Barcode2 { Ean = "Ean", Xasin = "Xasin", Asin = "Asin" }
 let stringBarcode: Barcode2 = Barcode2.Asin
 
 
+// Interfaces (define structure of an object, specifying the types of its properties)
+interface Person {
+    firstName: string;
+    lastName: string;
+    age: number;
+};
+
+let me: Person = {firstName: "Mattis", lastName: "TypyScripty", age: 28 };
+
+// Type aliases (create a new name for a type)
+type StringOrBoolean = string | boolean; 
+let sample: StringOrBoolean = true;
+let sample1: StringOrBoolean = "true";
+
+//Functions
+// Function Types and Signatures
+function add(a:number, b:number): number{return a + b };
+let multiply: (x: number, y:number) => number; 
+multiply = (x,y) => x*y; 
+
+// Optional and Default Parameters
+function greet(name: string, greeting: string = "Moin"): string {return `${greeting}, ${name}`};
+console.log(greet("Mattis")); 
+
