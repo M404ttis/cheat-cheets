@@ -41,10 +41,26 @@ f   - find/search next typed char
 ## advanced navigation
 <c-o> - jump back in vim jumplist 
 <c-i> - jump forward 
-ma  - set Mark 'a' within current file at current cursor location
-mA  - set Mark 'A' for all files at current cursor location, only 1 'A' can exist
+gg  - go to first line of current buffer
+G  - go to last line of current buffer
+ma  - set Mark 'a' at current cursor location to jump within file
+mA  - set one Mark 'A' at current cursor location to jump between files
 'a  - jump to first non-empty char in line of mark 'a' 
 `a  - jump to position (line and column) of mark 'a' 
+]'  - jump to next line with lowercase mark
+['  - jump to previous line with lowercase mark
+]`  - jump to next  lowercase mark
+[`  - jump to previous lowercase mark
+`.  - jump to position where last change occured in current buffer
+`"  - jump to position where last exited current buffer
+''  - jump back (to LINE in current buffer where jumped from)
+``  - jump back (to POSITION in current buffer where jumped from)
+`[  - jump to beginnging of previously changed/yanked text
+`]  - jump to end of previously changed/yanked text
+`<  - jump to beginning of last visual selection
+`>  - jump to end of last visual selection
+`0  - jump to position in last file edited (when exited vim)
+`1  - like `0 but the previous file (`2 according)
 
 ## repeat effectively
 :2,3 normal @a  - run the @a macro on the lines 2 to 3 at once 
