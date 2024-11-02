@@ -1,4 +1,7 @@
 # VIM 
+## latest cool shit 
+o   - in visual mode, move to other side of highlighted text
+
 ## basics 
 v   - enter visual mode
 V   - enter visual mode linewise
