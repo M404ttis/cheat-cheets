@@ -1,75 +1,74 @@
 # VIM 
 ## latest cool shit 
-o   - in visual mode, move to other side of highlighted text
+<code>o</code>   - in visual mode, move to other side of highlighted text<br>
 
 ## basics 
-v   - enter visual mode
-V   - enter visual mode linewise
-~   - change case 
-gv  - reselect last visual selection
-:   - in V (linewise) mode, do anything ()
+<code>v</code>   - enter visual mode<br>
+<code>V</code>   - enter visual mode linewise<br>
+<code>~</code>   - change case <br>
+<code>gv</code>  - reselect last visual selection<br>
+<code>:</code>   - in V (linewise) mode, do anything ()<br>
 
 ## editing
-a   - append, append right of cursor
-A   - Append, Append at end of line
-i   - insert, insert left of cursor
-I   - Insert, Insert beginning of line left of first non-empty char
-x   - in normal mode, delete current character
-c   - change 
-C   - delete everything until end of line, enter Insert-mode
-D   - delete everything until end of line
-dd  - delete whole current line
-S   - ^C delete whole line, enter Insert-mode 
-s   - cl
-y   - yank, in visual mode, higlighted chars
-yy  - yankyank, in visual mode whole line
-r   - replace current or marked chars with char followed by 'r'
+<code>a</code>   - append, append right of cursor<br>
+<code>A</code>   - Append, Append at end of line<br>
+<code>i</code>   - insert, insert left of cursor<br>
+<code>I</code>   - Insert, Insert beginning of line left of first non-empty char<br>
+<code>x</code>   - in normal mode, delete current character<br>
+<code>c</code>   - change <br>
+<code>C</code>   - delete everything until end of line, enter Insert-mode<br>
+<code>D</code>   - delete everything until end of line<br>
+<code>dd</code>  - delete whole current line<br>
+<code>S</code>   - ^C delete whole line, enter Insert-mode <br>
+<code>s</code>   - cl<br>
+<code>y</code>   - yank, in visual mode, higlighted chars<br>
+<code>yy</code>  - yankyank, in visual mode whole line<br>
+<code>r</code>   - replace current or marked chars with char followed by 'r'<br>
 
 
 ## basic moves
-w   - word, go to beginning of next word
-e   - end, jump to end of (next) word
-b   - back, go to beginning of (former) word
-^   - go to first non-empty character
-$   - go to last non-empty character
-ea  - end append, go into insert mode after current word
-bi  - back insert, go into insert mode at beginning of current word
-*   - add current word to searched words and jump to next instance
-n   - jump to next instance of searched words
-N   - lump to last instance of searched words
-f   - find/search next typed char
-;   - repeat last search performed 
-,   - reverse last search performed
+<code>w</code>   - word, go to beginning of next word<br>
+<code>e</code>   - end, jump to end of (next) word<br>
+<code>b</code>   - back, go to beginning of (former) word<br>
+<code>^</code>   - go to first non-empty character<br>
+<code>$</code>   - go to last non-empty character<br>
+<code>ea</code>  - end append, go into insert mode after current word<br>
+<code>bi</code>  - back insert, go into insert mode at beginning of current word<br>
+<code>*</code>   - add current word to searched words and jump to next instance<br>
+<code>n</code>   - jump to next instance of searched words<br>
+<code>N</code>   - lump to last instance of searched words<br>
+<code>f</code>   - find/search next typed char<br>
+<code>;</code>   - repeat last search performed <br>
+<code>,</code>   - reverse last search performed<br>
 
 ## advanced navigation
-<c-o> - jump back in vim jumplist 
-<c-i> - jump forward 
-gg  - go to first line of current buffer
-G  - go to last line of current buffer
-ma  - set Mark 'a' at current cursor location to jump within file
-mA  - set one Mark 'A' at current cursor location to jump between files
-'a  - jump to first non-empty char in line of mark 'a' 
-`a  - jump to position (line and column) of mark 'a' 
-]'  - jump to next line with lowercase mark
-['  - jump to previous line with lowercase mark
-]`  - jump to next  lowercase mark
-[`  - jump to previous lowercase mark
-`.  - jump to position where last change occured in current buffer
-`"  - jump to position where last exited current buffer
-''  - jump back (to LINE in current buffer where jumped from)
-``  - jump back (to POSITION in current buffer where jumped from)
-`[  - jump to beginnging of previously changed/yanked text
-`]  - jump to end of previously changed/yanked text
-`<  - jump to beginning of last visual selection
-`>  - jump to end of last visual selection
-`0  - jump to position in last file edited (when exited vim)
-`1  - like `0 but the previous file (`2 according)
+<code><</code>c-o> - jump back in vim jumplist <br>
+<code><</code>c-i> - jump forward <br>
+<code>gg</code>  - go to first line of current buffer<br>
+<code>G</code>  - go to last line of current buffer<br>
+<code>ma</code>  - set Mark 'a' at current cursor location to jump within file<br>
+<code>mA</code>  - set one Mark 'A' at current cursor location to jump between files<br>
+<code>'</code>a  - jump to first non-empty char in line of mark 'a' <br>
+<code>`</code>a  - jump to position (line and column) of mark 'a' <br>
+<code>]'</code>  - jump to next line with lowercase mark<br>
+<code>['</code>  - jump to previous line with lowercase mark<br>
+<code>]`</code>  - jump to next  lowercase mark<br>
+<code>[`</code>  - jump to previous lowercase mark<br>
+<code>`.</code>  - jump to position where last change occured in current buffer<br>
+<code>`"</code>  - jump to position where last exited current buffer<br>
+<code>''</code>  - jump back (to LINE in current buffer where jumped from)<br>
+<code>``</code>  - jump back (to POSITION in current buffer where jumped from)<br>
+<code>`[</code>  - jump to beginnging of previously changed/yanked text<br>
+<code>`]</code>  - jump to end of previously changed/yanked text<br>
+<code>`<</code>  - jump to beginning of last visual selection<br>
+<code>`></code>  - jump to end of last visual selection<br>
+<code>`</code>0  - jump to position in last file edited (when exited vim)<br>
+<code>`</code>1  - like `0 but the previous file (`2 according)<br>
 
 ## repeat effectively
-:2,3 normal @a  - run the @a macro on the lines 2 to 3 at once 
-:%s!^!//! -  insert "//" at the beginning of each line (using ! as delimiter instead of /)
-{visual}zf or zf{motion} - fold visual selected area; "zo" foldOpen; "zc" fold close 
-
-.   - repeat the latest change
-;.  - jump to next last search result and perform latest change  
-&   - repeat latest performed substitution 
+<code>:</code>2,3 normal @a  - run the @a macro on the lines 2 to 3 at once <br>
+<code>:%</code>s!^!//! -  insert "//" at the beginning of each line (using ! as delimiter instead of /)<br>
+<code>{</code>visual}zf or zf{motion} - fold visual selected area; "zo" foldOpen; "zc" fold close <br>
+<code>.</code>   - repeat the latest change<br>
+<code>;.</code>  - jump to next last search result and perform latest change  <br>
+<code>&</code>   - repeat latest performed substitution <br>
