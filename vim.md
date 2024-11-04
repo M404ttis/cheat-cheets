@@ -1,6 +1,9 @@
 # VIM 
-## latest cool shit 
+## make it a habbit - current learnings
 <code>o</code>   - in visual mode, move to other side of highlighted text<br>
+<code>''</code>  - jump back (to LINE in current buffer where jumped from)<br>
+<code>mA</code>  - set one Mark 'A' at current cursor location to jump between files<br>
+<code>\`a</code>  - jump to position (line and column) of mark 'a' <br>
 
 ## basics 
 <code>v</code>   - enter visual mode<br>
@@ -42,8 +45,8 @@
 <code>,</code>   - reverse last search performed<br>
 
 ## advanced navigation
-<code><c-o></code> - jump back in vim jumplist <br>
-<code><c-i></code> - jump forward <br>
+<code>\<c-o\></code> - jump back in vim jumplist <br>
+<code>\<c-i\></code> - jump forward <br>
 <code>gg</code>  - go to first line of current buffer<br>
 <code>G</code>  - go to last line of current buffer<br>
 <code>ma</code>  - set Mark 'a' at current cursor location to jump within file<br>
@@ -55,15 +58,15 @@
 <code>]\`</code>  - jump to next  lowercase mark<br>
 <code>[\`</code>  - jump to previous lowercase mark<br>
 <code>\`.</code>  - jump to position where last change occured in current buffer<br>
-<code>`"</code>  - jump to position where last exited current buffer<br>
+<code>\`"</code>  - jump to position where last exited current buffer<br>
 <code>''</code>  - jump back (to LINE in current buffer where jumped from)<br>
 <code>\`\`</code>  - jump back (to POSITION in current buffer where jumped from)<br>
 <code>\`[</code>  - jump to beginnging of previously changed/yanked text<br>
 <code>\`]</code>  - jump to end of previously changed/yanked text<br>
 <code>\`<</code>  - jump to beginning of last visual selection<br>
 <code>\`></code>  - jump to end of last visual selection<br>
-<code>\`</code>0  - jump to position in last file edited (when exited vim)<br>
-<code>\`</code>1  - like `0 but the previous file (`2 according)<br>
+<code>\`0</code>  - jump to position in last file edited (when exited vim)<br>
+<code>\`1</code>  - like `0 but the previous file (`2 according)<br>
 
 ## repeat effectively
 <code>:2,3 normal @a</code>  - run the @a macro on the lines 2 to 3 at once <br>
