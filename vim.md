@@ -71,7 +71,7 @@
 <code>\`<</code> - jump to beginning of last visual selection<br>
 <code>\`></code> - jump to end of last visual selection<br>
 <code>\`0</code> - jump to position in last file edited (when exited vim)<br>
-<code>\`1</code> - like `0 but the previous file (`2 according)<br>
+<code>\`1</code> - like \`0 but the previous file (\`2 according)<br>
 
 ## repeat effectively
 
@@ -88,4 +88,4 @@
 <code>"ayy</code> - yank whole line into the 'a' register<br>
 <code>@a</code> - use the 'a' makro/ apply steps from 'a' register<br>
 <code>:2,3 normal @a</code> - run the @a macro on the lines 2 to 3 at once <br>
-<code>:'<,'> normal @a</code> - run the @a macro on highlighted lines<br>
+<code>:'<,'> normal @a</code> - (highlight text, enter command mode) this runs the @a macro on highlighted lines<br>
