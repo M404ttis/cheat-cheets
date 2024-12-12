@@ -75,7 +75,6 @@
 
 ## repeat effectively
 
-<code>:2,3 normal @a</code> - run the @a macro on the lines 2 to 3 at once <br>
 <code>:%s!^!//!</code> - insert "//" at the beginning of each line (using ! as delimiter instead of /)<br>
 <code>{visual}zf or zf{motion}</code> - fold visual selected area; "zo" foldOpen; "zc" fold close <br>
 <code>.</code> - repeat the latest change<br>
@@ -84,7 +83,9 @@
 
 ## macros
 
-<code>:put a</code>pastes the content of the 'a' register
-<code>:reg</code>peek into the register contents
-<code>"ayy</code>yank whole line into the 'a' register
-<code>@a</code>use the 'a' makro/ apply steps from 'a' register
+<code>:put a</code> - pastes the content of the 'a' Rregister<br>
+<code>:reg</code> - peek into the register contents<br>
+<code>"ayy</code> - yank whole line into the 'a' register<br>
+<code>@a</code> - use the 'a' makro/ apply steps from 'a' register<br>
+<code>:2,3 normal @a</code> - run the @a macro on the lines 2 to 3 at once <br>
+<code>: normal @a</code> - run the @a macro on the lines 2 to 3 at once <br>
