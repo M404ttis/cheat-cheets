@@ -41,7 +41,6 @@
 <code>$</code> - go to last non-empty character<br>
 <code>ea</code> - end append, go into insert mode after current word<br>
 <code>bi</code> - back insert, go into insert mode at beginning of current word<br>
-<code>\*</code> - add current word to searched words and jump to next instance<br>
 <code>n</code> - jump to next instance of searched words<br>
 <code>N</code> - lump to last instance of searched words<br>
 <code>f</code> - find/search next typed char<br>
@@ -71,12 +70,23 @@
 <code>\`<</code> - jump to beginning of last visual selection<br>
 <code>\`></code> - jump to end of last visual selection<br>
 <code>\`0</code> - jump to position in last file edited (when exited vim)<br>
-<code>\`1</code> - like \`0 but the previous file (\`2 according)<br>
+<code>\`1</code> - like `0 but the previous file (\2 according)<br>
+
+## find stuff
+
+<code>\/</code> - enter search<br>
+<code>?</code> - search backwards<br>
+<code>n</code> - next search Result<br>
+<code>N</code> - Next search Result backwards<br>
+<code>\*</code> - add current word to searched words and jump to next instance<br>
+<code>\/ ctrl-R 0</code> - search, paste last yanked text<br>
+<code>\/ ctrl-R x</code> - search content from register x<br>
+<code>q\/ enter</code> - command mode sensitive search<br>
+<code>q\/p enter</code> - find pasted entities<br>
 
 ## repeat effectively
 
 <code>:%s!^!//!</code> - insert "//" at the beginning of each line (using ! as delimiter instead of /)<br>
-<code>{visual}zf or zf{motion}</code> - fold visual selected area; "zo" foldOpen; "zc" fold close <br>
 <code>.</code> - repeat the latest change<br>
 <code>;.</code> - jump to next last search result and perform latest change <br>
 <code>&</code> - repeat latest performed substitution <br>
@@ -89,3 +99,7 @@
 <code>@a</code> - use the 'a' makro/ apply steps from 'a' register<br>
 <code>:2,3 normal @a</code> - run the @a macro on the lines 2 to 3 at once <br>
 <code>:'<,'> normal @a</code> - (highlight text, enter command mode) this runs the @a macro on highlighted lines<br>
+
+## nice to know
+
+<code>{visual}zf or zf{motion}</code> - fold visual selected area; "zo" foldOpen; "zc" fold close <br>
