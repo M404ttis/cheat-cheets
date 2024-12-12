@@ -88,4 +88,4 @@
 <code>"ayy</code> - yank whole line into the 'a' register<br>
 <code>@a</code> - use the 'a' makro/ apply steps from 'a' register<br>
 <code>:2,3 normal @a</code> - run the @a macro on the lines 2 to 3 at once <br>
-<code>: normal @a</code> - run the @a macro on the lines 2 to 3 at once <br>
+<code>:'<,'> normal @a</code> - run the @a macro on highlighted lines<br>
