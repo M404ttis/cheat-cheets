@@ -6,6 +6,14 @@
 <code>''</code> - jump back (to LINE in current buffer where jumped from)<br>
 <code>mA</code> - set one Mark 'A' at current cursor location to jump between files<br>
 <code>\`a</code> - jump to position (line and column) of mark 'a' <br>
+<code>C-q</code> - add grep findings to quickfix list<br>
+
+## view
+<code>C-w -</code> decrese  current window height
+<code>C-w +</code> increase current window height
+<code>C-w \<<</code> decrese current window width
+<code>C-w \><</code> increase current window width
+
 
 ## basics
 
