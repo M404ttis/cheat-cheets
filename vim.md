@@ -11,8 +11,8 @@
 ## view
 <code>C-w -</code> decrese  current window height<br>
 <code>C-w +</code> increase current window height<br>
-<code>C-w \<<</code> decrese current window width<br>
-<code>C-w \><</code> increase current window width<br>
+<code>C-w \<</code> decrese current window width<br>
+<code>C-w \></code> increase current window width<br>
 
 
 ## basics
