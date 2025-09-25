@@ -9,10 +9,10 @@
 <code>C-q</code> - add grep findings to quickfix list<br>
 
 ## view
-<code>C-w -</code> decrese  current window height
-<code>C-w +</code> increase current window height
-<code>C-w \<<</code> decrese current window width
-<code>C-w \><</code> increase current window width
+<code>C-w -</code> decrese  current window height<br>
+<code>C-w +</code> increase current window height<br>
+<code>C-w \<<</code> decrese current window width<br>
+<code>C-w \><</code> increase current window width<br>
 
 
 ## basics
